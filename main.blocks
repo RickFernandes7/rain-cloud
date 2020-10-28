@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="S90Y)h1Yq3eO6Y!iT:yB">cloud</variable><variable id="yb8YR`a@+R/G5MQa!L9/">raindrop</variable><variable id="D:A7DWD$a;35_l*u|%ev">mySprite</variable><variable type="KIND_SpriteKind" id="hHY.e.WLk+~x}^5}!mVV">Player</variable><variable type="KIND_SpriteKind" id="63*;aeilU/PDBY-q:XE5">Projectile</variable><variable type="KIND_SpriteKind" id="6z}%9Izyo$?f.Uj|l:sp">Food</variable><variable type="KIND_SpriteKind" id="8iSxa~KWKbRQC^Z#/~_K">Enemy</variable><variable type="KIND_SpriteKind" id="-0#`cw9*_G(9bH@-mcUB">Cloud</variable></variables><block type="pxt-on-start" id="#wlLB6)|o01,_!6z}]QM" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="~j|(F:GVByRdYq(kWunl"><field name="VAR" id="S90Y)h1Yq3eO6Y!iT:yB">cloud</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside" id="4~]E`9bKfB?zds1)=:v0"><value name="img"><shadow type="screen_image_picker" id="GEQe)WAe}su#GhFHv;iY"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . 1 1 1 1 1 . . . . 
+. . . . . . 1 1 1 1 1 1 1 . . . 
+. . . . . 1 1 1 1 1 1 1 1 1 . . 
+. . . . 1 1 1 1 1 1 1 1 1 1 1 . 
+. . . 1 1 1 1 1 1 1 1 1 1 1 1 . 
+. . . 1 1 1 1 1 1 1 1 1 1 1 1 . 
+. . . . 1 1 1 1 1 1 1 1 1 1 . . 
+. . . . . . 1 1 1 1 1 1 1 . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id="A;}I#3r7#UiRItodpr-k"><field name="speed">10</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="0~e:MeGLN}$Jb9WYx#8T"><field name="speed">0</field></shadow></value></block></value></block></statement></block><block type="gameinterval" id="PzOZ~V:JL|^gPR`,zPO3" x="10" y="250"><value name="period"><shadow type="timePicker" id="4]-(G3`03jd8H,Il8FZl"><field name="ms">500</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="RCkXVU^k1DR?AIqqCF(Q"><field name="VAR" id="yb8YR`a@+R/G5MQa!L9/">raindrop</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite" id="J_VJYh5|OAB266|m9T:/"><value name="img"><shadow type="screen_image_picker" id="FeRwT@!7m,P!iIf:2#OT"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 9 . . . . . . . . . . . . . 
+. . 9 . . . . . . . . . . . . . 
+. . 9 . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="sprite"><block type="variables_get" id="F+-7ckst~9@+p@eAYH[q"><field name="VAR" id="S90Y)h1Yq3eO6Y!iT:yB">cloud</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="f66Dmu?I8SVeHr~%r_.~"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="]*?6bNj,JQ-vC7PY)Bun"><field name="speed">50</field></shadow></value></block></value><next><block type="spritesetsetflag" id=".aQg6Rb!n~1fv6$T5-iX"><field name="flag">SpriteFlag.Ghost</field><value name="sprite"><block type="variables_get" id="aF?j0V2WTCB%,I]cg`Cl"><field name="VAR" id="yb8YR`a@+R/G5MQa!L9/">raindrop</field></block></value><value name="on"><shadow type="toggleOnOff" id="Kf/8_V4{0y`2Yy}JU[By"><field name="on">true</field></shadow></value><next><block type="Sprite_blockCombine_change" id="zL_{IA*9Z{}Rcp,Xj.uO"><field name="property">Sprite.y@set</field><value name="mySprite"><block type="variables_get" id="Wo`xQ`c02I7r-iOVM~#B"><field name="VAR" id="yb8YR`a@+R/G5MQa!L9/">raindrop</field></block></value><value name="value"><shadow type="math_number" id="X#ldX.xSJ..KXR6T*2Av"><field name="NUM">3</field></shadow></value><next><block type="Sprite_blockCombine_change" id=")O5;I5PUQMXMYW:B,-f?"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get" id="[Z/NKtyR9O=[:5x/?@n|"><field name="VAR" id="yb8YR`a@+R/G5MQa!L9/">raindrop</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">3</field></shadow><block type="device_random" id="ciiW@fCn`U0lo}Qp/tZ4"><value name="min"><shadow type="math_number" id="Mr@|v1|]OG.uSj1!QmsP"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="Q@+yv=jU1#2~RGuN#$N}"><field name="NUM">14</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block><block type="spritesondestroyed" id="4uPQcH9t%i^pg|Iw]L.+" x="10" y="550"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="X?H@w*^CzA`c=.O~=F7!"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="75W5:2v/bi[wdm=tE8^c"><field name="MEMBER">Projectile</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy" id="ACp!gABTrE{}_A-*n6s#"><value name="value"><shadow type="math_number" id="XC,|z);*t`rl?{kzgC)@"><field name="NUM">1</field></shadow></value></block></statement></block><block type="spritesoncreated" id="Q^^A~O]uq7:2WqYb!KLz" x="10" y="690"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="q,D:=LEGA8F0dE29LsWm"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="Qr]t.fU3_TlmklUtamx#"><field name="MEMBER">Cloud</field></shadow></value><statement name="HANDLER"><block type="gameOver" id="yvEu}7t-ghtj5_#-y]Ri"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.confetti</field><value name="win"><shadow type="toggleWinLose" id="%kpXI_|%|O=|g,0_h~6y"><field name="win">true</field></shadow></value></block></statement></block></xml>
